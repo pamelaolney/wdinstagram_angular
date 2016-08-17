@@ -4,11 +4,10 @@
   angular
   .module("instagrams")
   .controller("InstagramIndexController", [
-    "InstagramService",
     InstagramIndexControllerFunction
   ]);
 
-  function InstagramIndexControllerFunction(InstagramService){
-    this.instagrams = InstagramFactory.query();
+  function InstagramIndexControllerFunction(){
+    this.instagrams = instagrams;
   }
 }());

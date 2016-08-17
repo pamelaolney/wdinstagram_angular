@@ -2,7 +2,7 @@
 
 (function(){
   angular
-  .module("wdinstagram", [
+  .module("instagram", [
     "ui.router",
     "instagrams"
   ])
@@ -14,13 +14,13 @@
   function RouterFunction($stateProvider){
     $stateProvider
     .state("instagramIndex", {
-      url: "/grumbles",
+      url: "/instagrams",
       templateUrl: "js/instagrams/index.html",
       controller: "InstagramIndexController",
       controllerAs: "InstagramIndexViewModel"
     })
     .state("instagramShow", {
-      url: "/grumbles/:id",
+      url: "/instagrams/:id",
       templateUrl: "js/instagrams/show.html"
     });
   }
