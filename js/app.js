@@ -26,7 +26,7 @@
       controllerAs: "InstagramNewViewModel"
     })
     .state("instagramEdit", {
-      url: "/instagrams/edit",
+      url: "/instagrams/:id/edit",
       templateUrl: "js/instagrams/edit.html",
       controller: "InstagramEditController",
       controllerAs: "InstagramEditViewModel"
