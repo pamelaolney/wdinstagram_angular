@@ -21,7 +21,9 @@
     })
     .state("instagramShow", {
       url: "/instagrams/:id",
-      templateUrl: "js/instagrams/show.html"
+      templateUrl: "js/instagrams/show.html",
+      controller: "InstagramShowController",
+      controllerAs: "InstagramShowViewModel"
     });
   }
 })();

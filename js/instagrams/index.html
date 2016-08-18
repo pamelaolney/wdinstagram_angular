@@ -1,5 +1,7 @@
 <h2>These are all the photos</h2>
 
 <div data-ng-repeat="instagram in InstagramIndexViewModel.instagrams">
-  <img data-ng-src="{{instagram.photo_url}}" src="#" alt="{{instagram.author}}" />
+  <a data-ui-sref="instagramShow({id: instagram.id})">
+    <img data-ng-src="{{instagram.photo_url}}"  alt="{{instagram.author}}" />
+  </a>
 </div>
