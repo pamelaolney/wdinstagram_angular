@@ -3,5 +3,6 @@
 <form>
   <input placeholder="Phoro URL" data-ng-model="InstagramNewViewModel.instagram.photo_url" />
   <input placeholder="Author" data-ng-model="InstagramNewViewModel.instagram.author" />
-  <input placeholder="About Me" data-ng-model="I">
+  <textarea placeholder="About Me" data-ng-model="InstagramNewViewModel.instagram.body"></textarea>
+<button type="button" data-ng-click="InstagramNewViewModel.create()">Add</button>  
 </form>
